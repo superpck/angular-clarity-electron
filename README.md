@@ -7,8 +7,8 @@
 
 ## Getting Start
 
-``
-` git clone https://github.com/superpck/angular-clarity-electron
-` npm i
-` npm run electron
-``
+''
+...git clone https://github.com/superpck/angular-clarity-electron
+...npm i
+...npm run electron
+''
