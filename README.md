@@ -6,8 +6,6 @@
 ### [ElectronJS](https://github.com/electron/electron) version 3.0.9
 
 ## Getting Start
-
-
 * git clone https://github.com/superpck/angular-clarity-electron
 * npm i
 * npm run electron
