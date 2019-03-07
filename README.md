@@ -5,7 +5,7 @@
 - [AngularJS](https://angular.io/) version 7.2.8
 - [Clarity Design System](https://vmware.github.io/clarity)  by VMware version 1.1.0
 - [Typescript](https://www.typescriptlang.org/) version 3.2.4
-- [ElectronJS](https://github.com/electron/electron) version 4.0.6
+- [ElectronJS](https://github.com/electron/electron) version 4.0.7
 - [ngx-electron](https://github.com/ThorstenHans/ngx-electron)
 
 ## Getting Start
