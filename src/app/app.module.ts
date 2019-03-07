@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxElectronModule } from 'ngx-electron';
 
 import { environment } from './../environments/environment';
 import { AlertService } from './services/alert.service';
@@ -25,6 +26,7 @@ import { HelperModule } from './pipes/helpers.module';
     ClarityModule,
     MainModule,
     LoginModule,
+    NgxElectronModule,
     BrowserAnimationsModule
   ],
   providers: [
