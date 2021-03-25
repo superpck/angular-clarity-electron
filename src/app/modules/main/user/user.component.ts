@@ -1,6 +1,9 @@
-import { MainService } from './../../../services/main.service';
 import { Component, OnInit } from '@angular/core';
 import { AlertService } from 'src/app/services/alert.service';
+import { ToastrService } from 'ngx-toastr';
+import { ExcelService } from './../../../services/excel.service';
+import { MainService } from './../../../services/main.service';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-user',
@@ -15,7 +18,9 @@ export class UserComponent implements OnInit {
 
   constructor(
     private mainService: MainService,
-    private alertService: AlertService
+    private alertService: AlertService,
+    private toastr: ToastrService,
+    private excel: ExcelService
   ) { }
 
   ngOnInit() {
@@ -39,6 +44,7 @@ export class UserComponent implements OnInit {
   async onDelete(row) {
     const confirmed: any = await this.alertService.confirm('', 'Delete confirm?');
     if (confirmed.value) {
+      this.toastr.success('Deleted successfully');
       // ....
     }
   }
@@ -46,9 +52,15 @@ export class UserComponent implements OnInit {
   async onSave() {
     const confirmed: any = await this.alertService.confirm('', 'Save confirm?');
     if (confirmed.value) {
+      this.toastr.success('Save successfully');
       // ....
       this.modalEdit = false;
     }
+  }
+
+  onExport() {
+    this.excel.exportAsExcelFile(this.users, 'user_',
+      moment().format('YYYYMMDD_HHmmss'))
   }
 }
 
