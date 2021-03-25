@@ -15,8 +15,8 @@ import { HelperModule } from 'src/app/pipes/helpers.module';
 @NgModule({
   declarations: [
     MainPageComponent, PageNotFoundComponent,
-    AboutComponent, LayoutComponent, UserComponent,
-    PreferenceComponent
+    AboutComponent, LayoutComponent,
+    UserComponent, PreferenceComponent
   ],
   imports: [
     CommonModule,
