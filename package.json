@@ -1,6 +1,6 @@
 {
   "name": "angular-electron",
-  "version": "11.2.7",
+  "version": "13.0.0",
   "scripts": {
     "ng": "ng",
     "start": "concurrently \"ng serve\" \"npm run electron\"",
