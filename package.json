@@ -28,7 +28,7 @@
     "@clr/ui": "^13.4.2",
     "@webcomponents/webcomponentsjs": "^2.6.0",
     "file-saver": "^2.0.5",
-    "got": "^12.1.0",
+    "got": "^11.8.5",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "ngx-toastr": "^15.0.0",
