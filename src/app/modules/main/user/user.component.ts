@@ -5,6 +5,10 @@ import { ExcelService } from './../../../services/excel.service';
 import { MainService } from './../../../services/main.service';
 import * as moment from 'moment';
 
+import '@cds/core/icon/register.js';
+import { ClarityIcons, vmIcon, homeIcon, exportIcon, folderIcon, userIcon, flameIcon, boltIcon, certificateIcon } from '@cds/core/icon';
+ClarityIcons.addIcons(vmIcon, homeIcon, exportIcon, folderIcon, userIcon, flameIcon, boltIcon, certificateIcon );
+
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
